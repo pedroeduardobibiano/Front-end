@@ -2,10 +2,12 @@ import './assets/styles/custom.scss';
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <h1>Hello</h1>
-  );
-}
+import Home  from 'assets/pages/Home';
+
+const App = () => {
+  return(
+  <Home /> 
+  ); 
+};
 
 export default App;
