@@ -31,7 +31,7 @@ export const Navbar = () => {
               <NavLink to="/" style={( isActive ) => ({ color: isActive ? 'white' : '' })}>HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/products" style={( isActive ) => ({ color: isActive ? 'white' : '' })}>Catálogo</NavLink>
+              <NavLink to="/products" style={( isActive ) => ({ color: isActive ? 'white' : '' })}>CATÁLOGO</NavLink>
             </li>
             <li>
               <NavLink to="admin" style={( isActive ) => ({ color: isActive ? 'white' : '' })}>ADMIN</NavLink>
