@@ -14,7 +14,8 @@ const AppRoutes = () => (
   <Router>
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/blog" element={<Home />} />
+      <Route path="/" element={<Catalog />} />
       <Route path="/products" element={<Catalog />} />
       <Route path="/products/:productId" element={<ProductDetails />} />
       <Route path="/admin" element={<Navigate to="/admin/products" replace />} />

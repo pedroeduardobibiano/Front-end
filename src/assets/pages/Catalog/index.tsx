@@ -10,19 +10,8 @@ const Catalog = () => {
     name: 'Smart TV',
     description: 'Tvzinha Boa',
     price: 2190.0,
-    imgUrl:
+    imageUrl:
       'https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/2-big.jpg',
-    date: '2020-07-14T10:00:00Z',
-    categories: [
-      {
-        id: 1,
-        name: 'Livros',
-      },
-      {
-        id: 3,
-        name: 'Computadores',
-      },
-    ],
   };
 
   return (
