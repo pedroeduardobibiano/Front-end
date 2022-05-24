@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from 'react-router-dom';
 import Home from 'assets/pages/Home';
 import { Navbar } from 'components/Navbar';
 import Catalog from 'assets/pages/Catalog';
@@ -9,10 +14,11 @@ const AppRoutes = () => (
   <Router>
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/products" element={<Catalog/>} />
-      <Route path="/products/:productId" element={<ProductDetails/>} />
-      <Route path="/admin" element={<Admin/>} />
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<Catalog />} />
+      <Route path="/products/:productId" element={<ProductDetails />} />
+      <Route path="/admin" element={<Navigate to="/admin/products" replace />} />
+      <Route path="/admin/*" element={<Admin />} />
     </Routes>
   </Router>
 );
