@@ -9,6 +9,7 @@ import { Navbar } from 'components/Navbar';
 import Catalog from 'assets/pages/Catalog';
 import Admin from 'assets/pages/Admin';
 import ProductDetails from 'assets/pages/ProductDetails';
+import Auth from 'assets/pages/Admin/Auth';
 
 const AppRoutes = () => (
   <Router>
@@ -20,6 +21,8 @@ const AppRoutes = () => (
       <Route path="/products/:productId" element={<ProductDetails />} />
       <Route path="/admin" element={<Navigate to="/admin/products" replace />} />
       <Route path="/admin/*" element={<Admin />} />
+      <Route path="/admin/auth" element={<Navigate to="/admin/auth/login" replace />} />
+      <Route path="/admin/auth/*" element={<Auth />} />
     </Routes>
   </Router>
 );
