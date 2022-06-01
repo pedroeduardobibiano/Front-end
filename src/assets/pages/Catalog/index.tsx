@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from 'types/product';
 import { SpringPage } from 'types/vendor/spring';
-import { getTokenData, isAuthenticated, requestBackend } from 'util/requests';
+import { requestBackend } from 'util/requests';
 import CardLoader from './CardLoader';
 import './styles.css';
 const Catalog = () => {
@@ -34,9 +34,9 @@ const Catalog = () => {
   return (
     <div className="container my-4 catalog-container">
       <div className="row catalog-title-container">
-        <h1>Catálogo de produtos</h1>
 
-        <h1>{isAuthenticated()? 'autenticado' : 'Não autenticado'}</h1>
+
+        <h1>Catálogo de produtos</h1>
       </div>
 
       <div className="row">
