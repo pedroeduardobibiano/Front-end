@@ -1,14 +1,13 @@
-import axios, { AxiosRequestConfig } from 'axios';
+import { AxiosRequestConfig } from 'axios';
 import Pagination from 'components/Pagination';
 import ProductCard from 'components/ProductCard';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from 'types/product';
 import { SpringPage } from 'types/vendor/spring';
-import { BASE_URL } from 'util/requests';
+import { getTokenData, isAuthenticated, requestBackend } from 'util/requests';
 import CardLoader from './CardLoader';
 import './styles.css';
-
 const Catalog = () => {
   const [page, setPage] = useState<SpringPage<Product>>();
   const [isLoading, setIsLoading] = useState(false);
@@ -17,14 +16,13 @@ const Catalog = () => {
     const params: AxiosRequestConfig = {
       method: 'GET',
       url: "/products",
-      baseURL: BASE_URL,
       params: {
         page: 0,
         size: 20,
       },
     };
     setIsLoading(true);
-    axios(params)
+    requestBackend(params)
       .then((response) => {
         setPage(response.data);
       })
@@ -37,6 +35,8 @@ const Catalog = () => {
     <div className="container my-4 catalog-container">
       <div className="row catalog-title-container">
         <h1>Catálogo de produtos</h1>
+
+        <h1>{isAuthenticated()? 'autenticado' : 'Não autenticado'}</h1>
       </div>
 
       <div className="row">
