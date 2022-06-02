@@ -1,24 +1,44 @@
+import ProductCard from 'components/ProductCard';
+import CardLoader from '../Catalog/CardLoader';
 import './styles.css';
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <>
+      <div className="container-blog">
+        <div className="container-box">
+          <div className="container-modal um">
+            <div className="container-modal-text">Curiosidades</div>
+          </div>
+          <div className="container-modal dois">
+            <div className="container-modal-text">adoção</div>
+          </div>
+          <div className="container-modal tres">
+            <div className="container-modal-text">Raças</div>
+          </div>
+        </div>
+        <h1>Agende aqui o banho e tosa do seu Pet</h1>
+        <div className="container-agenda">
+          <div className="container-agenda-modal"></div>
+          <div className="container-agenda-submit">
+            <p>Nome Completo:</p>
+            <input type="text" />
 
+            <p>E-mail</p>
 
-      <div className="base -card home-card">
-        <div className="home-content-container">
-          <div>
-            <h1>Conheça Melhor o nosso blog</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusamus fugiat?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor distinctio atque sint hic.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ea odio in laudantium placeat. Incidunt?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aliquid voluptatem! Iure molestiae vel consequuntur quam, facere voluptatum ullam vitae cupiditate dolores unde nulla praesentium, quae perspiciatis deserunt quas accusamus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta eum esse quos eveniet excepturi tempora! Eum nihil minus quis repellendus ipsa, vero nobis magnam cum temporibus labore esse inventore amet accusamus quasi aut expedita beatae odit assumenda, similique ab. Sint, pariatur veniam. Quam repellat commodi accusantium! Commodi cum minima odit earum ab repellendus nam placeat dignissimos quae maiores. Voluptate ipsum incidunt sequi. Animi optio autem inventore blanditiis, soluta voluptas iure natus excepturi consequatur pariatur, quae veniam voluptatibus eos dolor et mollitia id quam! Ab itaque accusantium eaque labore maiores. Doloremque.
-            </p>
+            <input type="text" />
+
+            <p>CPF</p>
+
+            <input type="text" />
+
+            <p>Data</p>
+
+            <input type="date" />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -37,6 +37,9 @@ const Catalog = () => {
 
 
         <h1>Catálogo de produtos</h1>
+        <h1>Catálogo de produtos</h1>
+      
+
       </div>
 
       <div className="row">

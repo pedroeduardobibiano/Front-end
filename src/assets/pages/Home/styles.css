@@ -1,129 +1,105 @@
-.home-container {
-  padding: 10px;
-  font-size: 18px;
-  text-align: center;
-}
-
-.home-card {
-  display: flex;
-  flex-direction: column-reverse;
-  border-radius: 20px;
-}
-
-.home-content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 10px 60px 10px;
-}
-
-.home-content-container h1 {
-  width: 260px;
-  font-size: 1em;
-  margin-bottom: 15px;
-}
-
-.home-content-container p {
-  width: 260px;
-  color: #9e9e9e;
-  font-size: 0.6em;
-  margin-bottom: 30px;
-}
-
-.home-image-container {
-  padding: 50px 15px;
-}
-.home-image-container svg {
+.container-blog {
   width: 100%;
-  height: auto;
+  height: 75vh;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-box {
+  width: 100vh;
+  height: 400px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.container-modal {
+  width: 300px;
+  height: 250px;
+  margin: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.13);
+}
+.container-modal-text {
+  background-color: transparent;
+  margin: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-@media (min-width: 576px) {
-  .home-container {
-    padding: 15px;
-    font-size: 40px;
-  }
-
-  .home-content-container h1 {
-    width: 506px;
-    margin-bottom: 20px;
-  }
-
-  .home-content-container p {
-    width: 506px;
-    color: #9e9e9e;
-    margin-bottom: 20px;
-  }
-
-  .home-image-container svg {
-    width: 506px;
-    height: auto;
-  }
+.text {
+  width: 100vh;
+  height: 400px;
+  display: flex;
+  display: flex;
+  margin-top: 50px;
 }
 
-@media (min-width: 768px) {
-  .home-image-container {
-    padding: 100px 20px;
-  }
-  .home-container {
-    font-size: 55px;
-  }
-
-  .home-content-container {
-    padding: 20px 10px 100px 10px;
-  }
+.um {
+  background-image: url(/src/assets/images/york.jpg);
+  background-size: 250px;
+  background-position: center;
 }
 
-@media (min-width: 992px) {
-  .home-image-container {
-    padding: 125px 20px;
-  }
-  .home-content-container {
-    padding: 20px 10px 150px 10px;
-  }
-
-  .home-content-container h1 {
-    margin-bottom: 26px;
-    width: 700px;
-  }
-
-  .home-content-container p {
-    margin-bottom: 47px;
-    width: 700px;
-  }
-  .home-container {
-    padding: 40px;
-  }
+.dois {
+  background-image: url(/src/assets/images/Gato.jpg);
+  background-size: 375px;
 }
 
-@media (min-width: 1200px) {
-  .home-card {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: calc(((85vh - 480px) / 2) - 20px) 0;
-  }
-  .home-content-container {
-    height: 480px;
-    padding: 20px;
-    width: 700px;
-    align-items: flex-start;
-    text-align: left;
-    align-content: space-between;
-    flex-flow: wrap;
-  }
-  .home-image-container {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
+.tres {
+  background-image: url(/src/assets/images/gatochorro.jpg);
+  background-size: 510px;
+  background-position: center;
+}
 
-  .home-image-container svg {
-    width: 100%;
-  }
+.container-agenda {
+  width: 48%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
 
-  @media (min-width: 1400px) {
-    .home-image-container {
-      width: 600px;
-    }
-  }
+.container-agenda-modal {
+  width: 45%;
+  height: 400px;
+  border-radius: 25px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.13);
+  background-image: url(/src/assets/images/banho.png);
+}
+
+.container-agenda-submit {
+  border-radius: 25px;
+  width: 45%;
+  height: 400px;
+  margin-left: 25px;
+}
+input {
+  width: 75%;
+  height: 35px;
+  margin-bottom: 25px;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.699);
+}
+h1{
+  margin-top: 55px;
+  margin-bottom: 55px;
 }

@@ -77,9 +77,18 @@ export const Navbar = () => {
                 to="/blog"
                 style={(isActive) => ({ color: isActive ? 'white' : '' })}
               >
-                BLOG
+                BLOG/SERVIÇOS
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/carrinho"
+                style={(isActive) => ({ color: isActive ? 'white' : '' })}
+              >
+                CARRINHO
+              </NavLink>
+            </li>
+            
           </ul>
         </div>
         <div className='nav-Login-logout'>

@@ -1,8 +1,9 @@
 
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
+import Products from './Products';
 import './styles.css';
-import Users from './User';
+import Users from './Users';
 
 const Admin = () => {
   return (
@@ -11,7 +12,7 @@ const Admin = () => {
       <div className="admin-content">
         <Routes>
           <Route>
-            <Route path="/products" element={<h1>aas</h1>} />
+            <Route path="/products" element={<Products/>} />
             <Route path="/categories" element={<h1>Ad</h1>} />
             <Route path="/users" element={<Users/>} />
           </Route>

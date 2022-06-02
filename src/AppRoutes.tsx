@@ -10,6 +10,7 @@ import Catalog from 'assets/pages/Catalog';
 import Admin from 'assets/pages/Admin';
 import ProductDetails from 'assets/pages/ProductDetails';
 import Auth from 'assets/pages/Admin/Auth';
+import Carrinho from 'assets/pages/Carrinho.txs';
 
 const AppRoutes = () => (
   <Router>
@@ -23,6 +24,7 @@ const AppRoutes = () => (
       <Route path="/admin/*" element={<Admin />} />
       <Route path="/admin/auth" element={<Navigate to="/admin/auth/login" replace />} />
       <Route path="/admin/auth/*" element={<Auth />} />
+      <Route path="/carrinho" element={<Carrinho />} />
     </Routes>
   </Router>
 );

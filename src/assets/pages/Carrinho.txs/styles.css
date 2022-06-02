@@ -1,0 +1,254 @@
+.Container {
+  width: 100%;
+  height: 90vh;
+  padding: 15px;
+}
+.Container p {
+  padding: 25px;
+  padding-left: 60px;
+  font-size: 25px;
+}
+
+.Text h5 {
+  color: black;
+  margin-bottom: 40px;
+}
+
+.Text h6 {
+  color: black;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.modal-produto {
+  width: 95%;
+  display: flex;
+  margin: 15px;
+  padding: 20px;
+}
+.Descricao {
+  width: 60%;
+  height: 50px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.Quantidade {
+  width: 15%;
+  height: 25px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.Preco {
+  width: 20%;
+  height: 25px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.Subtotal {
+  width: 20%;
+  height: 25px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  color: #407bff;
+}
+
+.modal-produto-result {
+  width: 95%;
+  display: flex;
+  margin: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-produto-result {
+  width: 95%;
+  height: 350px;
+  display: flex;
+  margin: 15px;
+  padding: 20px;
+}
+
+.geral-container {
+  width: 60%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+}
+.foto {
+  margin: 5px;
+
+  width: 300px;
+  height: 250px;
+  border-radius: 25px;
+  background-image: url(/src/assets/images/Macaco.PNG);
+  background-position: center;
+  background-size: 280px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.13);
+}
+.Text {
+  margin: 5px;
+
+  width: 300px;
+  height: 250px;
+  margin-left: 80px;
+}
+
+.container-prod {
+  width: 55%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.quantidade-prod {
+  width: 75%;
+  height: 25px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.Preco-prod {
+  width: 100%;
+  height: 25px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.Subtotal-prod {
+  width: 100%;
+  height: 25px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  color: #407bff;
+}
+
+.status {
+  margin-left: 30px;
+
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.89);
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+.status-prod {
+  padding: 10px;
+  margin-right: 25px;
+}
+.result-prod-status {
+  padding: 10px;
+  color: green;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.Soma {
+  width: 27%;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Subtotal-Soma {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  width: 90%;
+  justify-content: space-between;
+}
+.Subtotal-Soma-titulo {
+  padding: 20px;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Subtotal-Soma-result {
+  padding: 20px;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  background-color: #407bff;
+  color: white;
+}
+
+.Total-Soma {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  width: 90%;
+  justify-content: space-between;
+}
+.Total-Soma-titulo {
+  padding: 20px;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Total-Soma-result {
+  padding: 20px;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  background-color: #407bff;
+  color: white;
+}
+
+button {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.Finalizar-Compra {
+  width: 20%;
+  height: 32vh;
+  padding: 20px;
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  color: black;
+  border-radius: 12px;
+  margin-top: 25px;
+  margin-left: 1500px;
+  position: fixed;
+  top: 590px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+.Finalizar-Compra h6{
+  font-size: 20px;
+}
+.Pagar{
+  width: 500px;
+  height: 300px;
+}
+
+input{
+}
+
+::-webkit-input-placeholder  { font-size: 18px; }
+
+.botao button{
+  margin-top: 25px;
+  background-color: #407bff;
+  border-radius: 5px;
+}

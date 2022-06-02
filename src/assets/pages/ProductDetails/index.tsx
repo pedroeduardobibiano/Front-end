@@ -64,6 +64,8 @@ const ProductDetails = () => {
               <div className="description-container">
                 <h2>Descrição do produto</h2>
                 <p>{product?.description}</p>
+
+                <div><button>Adicionar ao Carrinho</button></div>
               </div>
             )}
           </div>
